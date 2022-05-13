@@ -1,0 +1,42 @@
+.response-card-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+}
+
+.response-card-content {
+    border: 2px dotted #96bf48;
+    width: 70%;
+    margin: 10px;
+    margin-right: 8%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.prompt-container,
+.response-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 300px) {
+    .response-card-wrapper {
+        width: 100%;
+    }
+    .response-card-content {
+        width: 100%;
+        margin-left: -8%;
+    }
+}
